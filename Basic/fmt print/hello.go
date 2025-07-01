@@ -1,19 +1,17 @@
-package main // Package main is the entry point of the program
-import "fmt" // fmt is the package for formatted I/O
+package main
 
-func main() {
-	var a int = 0
-	var b int = 0
-	fmt.Scanf("%d %d", &a, &b)        // Read two integers from standard input
-	fmt.Println(BearAndbrother(a, b)) // Call the BearAndbrother function with example arguments
-}
+import "fmt"
 
-func BearAndbrother(num1 int, num2 int) int {
-	count := 0
-	for num1 <= num2 {
-		num1 = num1 * 3
-		num2 = num2 * 2
-		count++
-	}
-	return count
+func fmtIntro() {
+	//Single line comment
+	/*	Multi-line comment
+		Another line of multi-line comment */
+
+	// Print functions from the fmt package
+	fmt.Print("Hello, World!")   // Print prints without a newline
+	fmt.Println("Hello, World!") // Println adds a newline at the end
+
+	fmt.Printf("Hello, %s!\n", "World") // Printf allows formatted output
+	// different format specifiers can be used
+	fmt.Printf("Integer: %d, Float: %.2f, String: %s\n", 42, 3.14, "example") // %d for integers, %.2f for floats, %s for strings
 }
