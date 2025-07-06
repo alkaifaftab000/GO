@@ -27,7 +27,7 @@ func DigitsPressed(residentAppartmentNumber int) int {
 
 		if i == (residentAppartmentNumber % 10) {
 			for j <= residentAppartmentNumber {
-				fmt.Println("Power: ", power)
+				// fmt.Println("Power: ", power)
 				switch power {
 				case 1:
 					totalDigitsPressed++
@@ -38,13 +38,13 @@ func DigitsPressed(residentAppartmentNumber int) int {
 				case 1000:
 					totalDigitsPressed += 4
 				}
-				fmt.Println("Total Digits Pressed: ", totalDigitsPressed)
+				// fmt.Println("Total Digits Pressed: ", totalDigitsPressed)
 				power *= 10
 				j = j + (i * power)
 			}
 		} else {
 			for j < 10000 {
-				fmt.Println("Power: ", power)
+				// fmt.Println("Power: ", power)
 				switch power {
 				case 1:
 					totalDigitsPressed++
@@ -55,7 +55,7 @@ func DigitsPressed(residentAppartmentNumber int) int {
 				case 1000:
 					totalDigitsPressed += 4
 				}
-				fmt.Println("Total Digits Pressed: ", totalDigitsPressed)
+				// fmt.Println("Total Digits Pressed: ", totalDigitsPressed)
 				power *= 10
 				j = j + (i * power)
 			}
